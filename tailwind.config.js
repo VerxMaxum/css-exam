@@ -13,6 +13,28 @@ export default {
         lgraycss: '#E8EBED',
         graycss: '#72787F',
         base: '#1B1D1F'
+      },
+      fontFamily: {
+        nunito: [
+          'Nunito', 'sans-serif'
+        ]
+      },
+      fontSize: {
+        p80: '80px',
+        p66: '66px',
+        p22: '22px'
+      },
+      borderRadius: {
+        p10: '10px'
+      },
+      height: {
+        p120: '120px'
+      },
+      backgroundImage: {
+        banner: "url('./images/logo.png')"
+      },
+      backgroundSize: {
+        bannerrepeat: "auto 120px"
       }
     },
   },
