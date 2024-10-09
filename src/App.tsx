@@ -1,9 +1,10 @@
-import './App.css'
+import { createContext } from 'react'
+import { Landing } from './components/Landing'
 
 function App() {
-  
 
   return (
+    <Landing />
   )
 }
 
