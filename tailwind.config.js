@@ -32,17 +32,23 @@ export default {
         p20: '20px'
       },
       height: {
-        p120: '120px'
+        p120: '120px',
+        p315: '315px'
+      },
+      width: {
+        p315: '315px',
+        p1580: '1580px'
       },
       backgroundImage: {
-        banner: "url('./images/logo.png')"
+        // banner: "url('./images/logo.png')",
+        'post': "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)), url('./images/latest.jpg')"
       },
       backgroundSize: {
         bannerrepeat: "auto 120px"
       },
       gridTemplateColumns: {
         track: 'repeat(auto-fill, minmax(372px, 1fr))',
-        subject: 'repeat(auto-fill, minmax(413px, 1fr))'
+        subject: 'repeat(auto-fill, minmax(413px, 1fr))',
       }
     },
   },

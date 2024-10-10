@@ -145,17 +145,10 @@ export const Landing = () => {
         </div>
         <div className="flex flex-col items-center">
           <h3 className="text-primary font-extrabold text-p52 text-center p-12" ref={latestPage}>Latest Posts</h3>
-          <div className="flex overflow-hidden w-p1580">
+          <div className="flex flex-col overflow-hidden w-p1580">
             <Carousel data={slides} />
           </div>
-          <div className="flex justify-center p-16">
-            <div className="flex gap-8">
-              <button className="rounded-full bg-primary w-5 h-5"></button>
-              <button className="rounded-full bg-graycss w-5 h-5"></button>
-              <button className="rounded-full bg-graycss w-5 h-5"></button>
-              <button className="rounded-full bg-graycss w-5 h-5"></button>
-            </div>
-          </div>
+          
         </div>
       </>
   );
