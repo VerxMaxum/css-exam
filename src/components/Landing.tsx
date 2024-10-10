@@ -83,13 +83,13 @@ export const Landing = () => {
               <div className="mt-16">
                 <button className="text-p18 text-white bg-purplecss font-bold px-4 py-2 mr-4 rounded-p10
               translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all">Data Science</button>
-              <button className="text-p18 text-white bg-purplecss font-bold px-4 py-2 mr-4 rounded-p10
+                <button className="text-p18 text-white bg-purplecss font-bold px-4 py-2 mr-4 rounded-p10
               translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all">Core Science</button>
-              <button className="text-p18 text-white bg-purplecss font-bold px-4 py-2 mr-4 rounded-p10
+                <button className="text-p18 text-white bg-purplecss font-bold px-4 py-2 mr-4 rounded-p10
               translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all">Game Development</button>
               </div>
             </div>
-            <div className="grid grid-cols-subject gap-11 mt-12">
+            <div className="grid grid-cols-subject gap-11 mt-12 px-[5%]">
               {
                 listOfSubjects.filter(e => e.isSelected).map(e => e.list)[0].map((e) => {
                   return (

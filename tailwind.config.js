@@ -28,7 +28,8 @@ export default {
         p18: '18px'
       },
       borderRadius: {
-        p10: '10px'
+        p10: '10px',
+        p20: '20px'
       },
       height: {
         p120: '120px'
@@ -40,7 +41,8 @@ export default {
         bannerrepeat: "auto 120px"
       },
       gridTemplateColumns: {
-        track: 'repeat(auto-fill, minmax(372px, 1fr))'
+        track: 'repeat(auto-fill, minmax(372px, 1fr))',
+        subject: 'repeat(auto-fill, minmax(413px, 1fr))'
       }
     },
   },

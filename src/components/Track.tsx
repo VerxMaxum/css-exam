@@ -12,7 +12,7 @@ export const Track = ({src, trackName, dummyText}: TrackProps) => {
             </div>
             <h5 className="text-p26 font-bold text-center text-ellipsis mt-6">{trackName}</h5>
             <div className="mt-1">
-                <p className="text-base text-center h-[120px] text-graycss text-ellipsis word overflow-hidden">
+                <p className="text-base text-center h-[120px] text-graycss text-ellipsis overflow-hidden">
                     {dummyText}
                 </p>
             </div>
