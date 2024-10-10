@@ -33,7 +33,8 @@ export default {
       },
       height: {
         p120: '120px',
-        p315: '315px'
+        p315: '315px',
+        p211: '211px'
       },
       width: {
         p315: '315px',

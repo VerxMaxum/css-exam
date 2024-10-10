@@ -150,6 +150,42 @@ export const Landing = () => {
           </div>
           
         </div>
+        <footer className="flex h-p211 bg-primary p-10">
+            <div className="w-1/2 flex flex-col justify-evenly">
+              <h5 className="text-p26 font-bold text-white">Logo</h5>
+              <p className="text-base text-white">CSS Headliner</p>
+              <div className="bg-white px-4 py-1 rounded-lg w-fit">
+                <span className="text-primary text-base">Passionately designed & developed by CSS</span>
+                <span></span>
+              </div>
+            </div>
+            <div className="flex justify-between w-1/3">
+              <div className="flex flex-col justify-evenly">
+                <p className="text-white font-bold text-p18">UST Computer Science Society</p>
+                <p className="text-white text-p18">About Us</p>
+                <p className="text-white text-p18">Community</p>
+                <p className="text-white text-p18">News & Events</p>
+              </div>
+              <div className="flex flex-col gap-2">
+                <div className="flex justify-between">
+                  <img src="./images/mail.svg" />
+                  <span className="text-white text-base ml-2">Email</span>
+                </div>
+                <div className="flex justify-between w-6 h-6">
+                  <img src="./images/facebook.svg" />
+                  <span className="text-white text-base ml-2">Facebook</span>
+                </div>
+                <div className="flex justify-between w-6 h-6">
+                  <img src="./images/twitter.svg" />
+                  <span className="text-white text-base ml-2">Twitter</span>
+                </div>
+                <div className="flex justify-between w-6 h-6">
+                  <img src="./images/instagram.svg" />
+                  <span className="text-white text-base ml-2">Instagram</span>
+                </div>
+              </div>
+            </div>
+        </footer>
       </>
   );
 }
