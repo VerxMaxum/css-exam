@@ -23,7 +23,6 @@ export const Landing = () => {
   const subjects = useRef<HTMLDivElement | null>(null);
   const latestPage = useRef<HTMLDivElement | null>(null);
   const [listOfSubjects, setListOfSubjects] = useState<ListOfSubjectProps>(subjectDisplay);
-  console.log(slides);
 
   function handleSubjectClick(e: React.MouseEvent<HTMLButtonElement>) {
 
@@ -46,7 +45,6 @@ export const Landing = () => {
 
     setListOfSubjects(copySubjects);
   }
-  console.log(listOfSubjects);
 
   return (
       <>
@@ -101,7 +99,7 @@ export const Landing = () => {
           </div>
           <Banner />
         </div>
-        <div className="" id="subjects" ref={subjects}>
+        <div className="flex flex-col" id="subjects" ref={subjects}>
           <div className="flex flex-col items-center">
             <h3 className="text-primary font-extrabold text-p52 text-center p-12">Subjects</h3>
             <h6 className="text-base text-p22 font-medium">
@@ -145,11 +143,17 @@ export const Landing = () => {
           </div>
           <Banner />
         </div>
-        <div>
+        <div className="flex flex-col items-center">
           <h3 className="text-primary font-extrabold text-p52 text-center p-12" ref={latestPage}>Latest Posts</h3>
-          <div>
-            <div>
-              <Carousel data={slides}/>
+          <div className="flex overflow-hidden w-p1580">
+            <Carousel data={slides} />
+          </div>
+          <div className="flex justify-center p-16">
+            <div className="flex gap-8">
+              <button className="rounded-full bg-primary w-5 h-5"></button>
+              <button className="rounded-full bg-graycss w-5 h-5"></button>
+              <button className="rounded-full bg-graycss w-5 h-5"></button>
+              <button className="rounded-full bg-graycss w-5 h-5"></button>
             </div>
           </div>
         </div>
