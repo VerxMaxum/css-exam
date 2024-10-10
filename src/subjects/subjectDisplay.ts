@@ -1,4 +1,30 @@
 const subjectDisplay = [
+    
+    {
+        isSelected: true,
+        list: [
+            {
+                code: 'CS ELEC 1C',
+                title: 'Data Warehousing',
+                src: './images/data1.jpg'
+            },
+            {
+                code: 'CS ELEC 2C',
+                title: 'Machine Learning',
+                src: './images/data2.jpg'
+            },
+            {
+                code: 'CS ELEC 3C',
+                title: 'Data Analysis and Visualization',
+                src: './images/data3.jpg'
+            },
+            {
+                code: 'CS ELEC 4C',
+                title: 'Data Mining',
+                src: './images/data4.jpg'
+            },
+        ]
+    },
     {
         isSelected: false,
         list: [
@@ -46,31 +72,6 @@ const subjectDisplay = [
                 code: 'CS ELEC 4B',
                 title: 'Game Production',
                 src: './images/game4.jpg'
-            },
-        ]
-    },
-    {
-        isSelected: true,
-        list: [
-            {
-                code: 'CS ELEC 1C',
-                title: 'Data Warehousing',
-                src: './images/data1.jpg'
-            },
-            {
-                code: 'CS ELEC 2C',
-                title: 'Machine Learning',
-                src: './images/data2.jpg'
-            },
-            {
-                code: 'CS ELEC 3C',
-                title: 'Data Analysis and Visualization',
-                src: './images/data3.jpg'
-            },
-            {
-                code: 'CS ELEC 4C',
-                title: 'Data Mining',
-                src: './images/data4.jpg'
             },
         ]
     }
