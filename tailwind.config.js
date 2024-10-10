@@ -22,7 +22,10 @@ export default {
       fontSize: {
         p80: '80px',
         p66: '66px',
-        p22: '22px'
+        p22: '22px',
+        p52: '52px',
+        p26: '26px',
+        p18: '18px'
       },
       borderRadius: {
         p10: '10px'
@@ -35,6 +38,9 @@ export default {
       },
       backgroundSize: {
         bannerrepeat: "auto 120px"
+      },
+      gridTemplateColumns: {
+        track: 'repeat(auto-fill, minmax(372px, 1fr))'
       }
     },
   },
