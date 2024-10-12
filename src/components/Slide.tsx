@@ -10,7 +10,7 @@ type SlideProps = {
 
 export const Slide = ({ subData }: SlideProps) => {
   return (
-    <div className="flex gap-16 px-16">
+    <div className="slide">
       {
         subData.map((e) => {
           return (

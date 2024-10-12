@@ -24,8 +24,7 @@ export const Carousel = ({ data }: CarouselProps) => {
 
   return(
     <>
-      <div className="flex transition-transform ease-out duration-1000"
-      style={{transform: `translateX(-${curr * 1580}px)`}}>
+      <div className="carousel-extend" style={{transform: `translateX(-${curr * 1580}px)`}}>
         {
           data.map((e) => {
             return(
@@ -34,15 +33,15 @@ export const Carousel = ({ data }: CarouselProps) => {
           })
         }
       </div>
-      <div className="flex justify-center p-16">
-        <div className="flex gap-8">
-          <button className={`rounded-full ${curr === 0 ? "bg-primary" : "bg-graycss"} w-5 h-5`}
+      <div className="indicators-main">
+        <div className="indicators-wrapper">
+          <button className={`indicator ${curr === 0 ? "bg-primary" : "bg-graycss"}`}
           onClick={() => setCurr(0)}></button>
-          <button className={`rounded-full ${curr === 1 ? "bg-primary" : "bg-graycss"} w-5 h-5`}
+          <button className={`indicator ${curr === 1 ? "bg-primary" : "bg-graycss"}`}
           onClick={() => setCurr(1)}></button>
-          <button className={`rounded-full ${curr === 2 ? "bg-primary" : "bg-graycss"} w-5 h-5`}
+          <button className={`indicator ${curr === 2 ? "bg-primary" : "bg-graycss"}`}
           onClick={() => setCurr(2)}></button>
-          <button className={`rounded-full ${curr === 3 ? "bg-primary" : "bg-graycss"} w-5 h-5`}
+          <button className={`indicator ${curr === 3 ? "bg-primary" : "bg-graycss"}`}
           onClick={() => setCurr(3)}></button>
         </div>
       </div>

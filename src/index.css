@@ -28,3 +28,195 @@
         src: url('./fonts/Nunito-Medium.ttf') format('ttf');
     }
 }
+
+@layer components {
+    .section,
+    .subjects-main {
+        @apply flex flex-col;
+    }
+
+    .nav-wrapper {
+        @apply flex;
+    }
+
+    .nav-logo-wrapper {
+        @apply w-1/2 flex items-center ml-7;
+    }
+
+    .navigations-wrapper {
+        @apply w-1/2 flex p-10 justify-evenly;
+    }
+
+    .navigation-item {
+        @apply text-primary font-nunito font-bold text-center text-lg p-4 cursor-pointer;
+        @apply hover:bg-primary hover:text-white hover:transition-all;
+    }
+
+    .home-content {
+        @apply w-full flex flex-col items-center pt-40;
+    }
+
+    .home-title {
+        @apply text-p66 text-primary font-extrabold leading-[120%] w-[740px] text-center;
+    }
+
+    .home-sub-container,
+    .track-main {
+        @apply flex justify-center;
+    }
+
+    .home-subtitle {
+        @apply text-base text-p22 font-medium;
+    }
+
+    .home-buttons {
+        @apply text-white bg-purplecss p-3 font-bold rounded-p10 text-base translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all;
+    }
+
+    .section-title {
+        @apply text-primary font-extrabold text-p52 text-center p-12;
+    }
+
+    .tracks-wrapper {
+        @apply grid grid-cols-track w-[1216px] gap-10;
+    }
+
+    .track {
+        @apply h-fit w-full flex flex-col items-center;
+    }
+
+    .track-img {
+        @apply object-cover w-full h-64 rounded-[35px];
+    }
+
+    .track-name {
+        @apply text-p26 font-bold text-center text-ellipsis mt-6;
+    }
+
+    .track-description {
+        @apply text-base text-center h-[120px] text-graycss text-ellipsis overflow-hidden;
+    }
+
+    .learn-more,
+    .subject-button {
+        @apply text-p18 text-white bg-purplecss font-bold px-4 py-2 mt-12 rounded-p10;
+        @apply translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all;
+    }
+
+    .subjects-subtitle {
+        @apply text-base text-p22 font-medium;
+    }
+
+    .subject-wrapper {
+        @apply h-fit bg-lgraycss pb-8 rounded-p20;
+    }
+
+    .subject-img-wrapper {
+        @apply rounded-p20 overflow-hidden;
+    }
+
+    .subject-img {
+        @apply object-cover w-full h-96;
+    }
+
+    .subject-code {
+        @apply text-p26 text-primary font-bold ml-6 mt-6;
+    }
+
+    .subject-title {
+        @apply text-p22 font-medium text-base ml-6;
+    }
+
+    .subject-learn {
+        @apply text-p18 text-white bg-purplecss font-bold px-4 py-2 rounded-p10 mr-6;
+        @apply translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all;
+    }
+
+    .subjects-wrapper {
+        @apply grid grid-cols-subject gap-11 mt-12 px-[5%];
+    }
+
+    .carousel-wrapper {
+        @apply flex flex-col overflow-hidden w-p1580;
+    }
+
+    .carousel-extend {
+        @apply flex transition-transform ease-out duration-1000;
+    }
+
+    .slide {
+        @apply flex gap-16 px-16;
+    }
+
+    .post-wrapper {
+        @apply flex flex-col bg-post w-p315 h-p315 justify-end p-6 transition-all hover:scale-110;
+    }
+
+    .post-heading {
+        @apply text-white text-p22 font-medium;
+    }
+
+    .posted {
+        @apply text-white text-base;
+    }
+
+    .indicators-main {
+        @apply flex justify-center p-16;
+    }
+
+    .indicators-wrapper {
+        @apply flex gap-8;
+    }
+
+    .indicator {
+        @apply rounded-full w-5 h-5;
+    }
+
+    .footer {
+        @apply flex h-p211 bg-primary p-10;
+    }
+
+    .footer-brand {
+        @apply w-1/2 flex flex-col justify-evenly;
+    }
+
+    .footer-logo {
+        @apply text-p26 font-bold text-white;
+    }
+
+    .footer-headliner {
+        @apply text-base text-white;
+    }
+
+    .passionately-wrapper {
+        @apply bg-white px-4 py-1 rounded-lg w-fit;
+    }
+    
+    .passionately {
+        @apply text-base text-primary;
+    }
+
+    .contacts-wrapper {
+        @apply flex justify-between w-1/3;
+    }
+
+    .other-pages {
+        @apply flex flex-col justify-evenly;
+    }
+
+    .other-page {
+        @apply text-white text-p18;
+    }
+
+    .accounts-wrapper {
+        @apply flex flex-col gap-2;
+    }
+
+    .account {
+        @apply flex justify-between;
+    }
+
+    .account-text {
+        @apply text-base text-white ml-2;
+    }
+}

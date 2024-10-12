@@ -48,35 +48,32 @@ export const Landing = () => {
 
   return (
       <>
-        <div className="h-screen flex flex-col">
+        <section className="section h-screen">
           <Navigation />
-          <div className="w-full flex flex-col items-center pt-40">
-            <div className="flex justify-center">
-              <h2 className="text-p66 text-primary font-extrabold leading-[120%] w-[740px] text-center">
+          <div className="home-content">
+            <div className="home-sub-container">
+              <h2 className="home-title">
                 Welcome to
                 Computer Science Society
               </h2>
             </div>
-            <div className="flex justify-center mt-10">
-              <h6 className="text-base text-p22 font-medium">From The University of Santo Tomas</h6>
+            <div className="home-sub-container mt-10">
+              <h6 className="home-subtitle">From The University of Santo Tomas</h6>
             </div>
-            <div className="flex justify-center m-16">
-              <button className="bg-purplecss p-3 text-white font-bold rounded-p10 text-base mr-2
-              translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all"
+            <div className="home-sub-container m-16">
+              <button className="home-buttons text-white mr-2"
               onClick={() => {
                 tracks.current?.scrollIntoView({
                   behavior: 'smooth'
                 })
               }}>#tracks</button>
-              <button className="bg-purplecss p-3 text-white font-bold rounded-p10 text-base mr-2
-              translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all"
+              <button className="home-buttons text-white mr-2"
               onClick={() => {
                 subjects.current?.scrollIntoView({
                   behavior: 'smooth'
                 })
               }}>#subjects</button>
-              <button className="bg-purplecss p-3 text-white font-bold rounded-p10 text-base
-              translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all"
+              <button className="home-buttons text-white"
               onClick={() => {
                 latestPage.current?.scrollIntoView({
                   behavior: 'smooth'
@@ -85,24 +82,22 @@ export const Landing = () => {
             </div>
           </div>
           <Banner />
-        </div>
-        <div className="h-screen flex flex-col" id="tracks" ref={tracks}>
-          <div>
-            <h3 className="text-primary font-extrabold text-p52 text-center p-12">Tracks</h3>
-          </div>
-          <div className="flex justify-center">
-            <div className="grid grid-cols-track w-[1216px] gap-10">
+        </section>
+        <section className="section h-screen" id="tracks" ref={tracks}>
+          <h3 className="section-title">Tracks</h3>
+          <div className="track-main">
+            <div className="tracks-wrapper">
               <Track src="./images/data_science.jpg" trackName="Data Science" dummyText={dummyTexts[0]} />
               <Track src="./images/core_sci.jpg" trackName="Core Science" dummyText={dummyTexts[1]} />
               <Track src="./images/game_dev.jpg" trackName="Game Development" dummyText={dummyTexts[2]} />
             </div>
           </div>
           <Banner />
-        </div>
-        <div className="flex flex-col" id="subjects" ref={subjects}>
+        </section>
+        <section className="section" id="subjects" ref={subjects}>
           <div className="flex flex-col items-center">
-            <h3 className="text-primary font-extrabold text-p52 text-center p-12">Subjects</h3>
-            <h6 className="text-base text-p22 font-medium">
+            <h3 className="section-title">Subjects</h3>
+            <h6 className="subjects-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut
             </h6>
             <div className="mt-16">
@@ -123,8 +118,7 @@ export const Landing = () => {
                   }
 
                   return (
-                    <button key={index} className={`text-p18 text-white ${e.isSelected ? 'bg-orangecss' : 'bg-primary'} font-bold px-4 py-2 mr-4 rounded-p10
-                      translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all`}
+                    <button key={index} className={`subject-button ${e.isSelected ? 'bg-orangecss' : 'bg-primary'} mr-4`}
                       id={id}
                       onClick={handleSubjectClick}>{title}</button>
                   );
@@ -132,7 +126,7 @@ export const Landing = () => {
               }
             </div>
           </div>
-          <div className="grid grid-cols-subject gap-11 mt-12 px-[5%]">
+          <div className="subjects-wrapper">
             {
               listOfSubjects.filter(e => e.isSelected).map(e => e.list)[0].map((e, index) => {
                 return (
@@ -142,46 +136,45 @@ export const Landing = () => {
             }
           </div>
           <Banner />
-        </div>
-        <div className="flex flex-col items-center">
-          <h3 className="text-primary font-extrabold text-p52 text-center p-12" ref={latestPage}>Latest Posts</h3>
-          <div className="flex flex-col overflow-hidden w-p1580">
+        </section>
+        <section className="section items-center">
+          <h3 className="section-title" ref={latestPage}>Latest Posts</h3>
+          <div className="carousel-wrapper">
             <Carousel data={slides} />
           </div>
           
-        </div>
-        <footer className="flex h-p211 bg-primary p-10">
-            <div className="w-1/2 flex flex-col justify-evenly">
-              <h5 className="text-p26 font-bold text-white">Logo</h5>
-              <p className="text-base text-white">CSS Headliner</p>
-              <div className="bg-white px-4 py-1 rounded-lg w-fit">
-                <span className="text-primary text-base">Passionately designed & developed by CSS</span>
-                <span></span>
+        </section>
+        <footer className="footer">
+            <div className="footer-brand">
+              <h5 className="footer-logo">Logo</h5>
+              <p className="footer-headliner">CSS Headliner</p>
+              <div className="passionately-wrapper">
+                <span className="passionately">Passionately designed & developed by CSS</span>
               </div>
             </div>
-            <div className="flex justify-between w-1/3">
-              <div className="flex flex-col justify-evenly">
-                <p className="text-white font-bold text-p18">UST Computer Science Society</p>
-                <p className="text-white text-p18">About Us</p>
-                <p className="text-white text-p18">Community</p>
-                <p className="text-white text-p18">News & Events</p>
+            <div className="contacts-wrapper">
+              <div className="other-pages">
+                <p className="other-page font-bold">UST Computer Science Society</p>
+                <p className="other-page">About Us</p>
+                <p className="other-page">Community</p>
+                <p className="other-page">News & Events</p>
               </div>
-              <div className="flex flex-col gap-2">
-                <div className="flex justify-between">
+              <div className="accounts-wrapper">
+                <div className="account">
                   <img src="./images/mail.svg" />
-                  <span className="text-white text-base ml-2">Email</span>
+                  <span className="account-text">Email</span>
                 </div>
-                <div className="flex justify-between w-6 h-6">
+                <div className="account w-6 h-6">
                   <img src="./images/facebook.svg" />
-                  <span className="text-white text-base ml-2">Facebook</span>
+                  <span className="account-text">Facebook</span>
                 </div>
-                <div className="flex justify-between w-6 h-6">
+                <div className="account w-6 h-6">
                   <img src="./images/twitter.svg" />
-                  <span className="text-white text-base ml-2">Twitter</span>
+                  <span className="account-text">Twitter</span>
                 </div>
-                <div className="flex justify-between w-6 h-6">
+                <div className="account w-6 h-6">
                   <img src="./images/instagram.svg" />
-                  <span className="text-white text-base ml-2">Instagram</span>
+                  <span className="account-text">Instagram</span>
                 </div>
               </div>
             </div>
