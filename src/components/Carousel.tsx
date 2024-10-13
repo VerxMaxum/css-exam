@@ -1,6 +1,5 @@
 import { Slide } from './Slide'
 import { useState, useEffect } from 'react'
-import { SmallSlide } from './SmallSlide';
 import { Post } from './Post';
 
 type CarouselProps = {

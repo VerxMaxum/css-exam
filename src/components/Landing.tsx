@@ -137,7 +137,7 @@ export const Landing = () => {
           </div>
           <Banner />
         </section>
-        <section className="section items-center">
+        <section className="section items-center h-max">
           <h3 className="section-title" ref={latestPage}>Latest Posts</h3>
           <div className="carousel-wrapper">
             <Carousel data={slides} />
@@ -149,7 +149,7 @@ export const Landing = () => {
               <h5 className="footer-logo">Logo</h5>
               <p className="footer-headliner">CSS Headliner</p>
               <div className="passionately-wrapper">
-                <span className="passionately">Passionately designed & developed by CSS</span>
+                <p className="passionately">Passionately designed & developed by CSS</p>
               </div>
             </div>
             <div className="contacts-wrapper">
@@ -161,19 +161,27 @@ export const Landing = () => {
               </div>
               <div className="accounts-wrapper">
                 <div className="account">
-                  <img src="./images/mail.svg" />
+                  <div>
+                    <img src="./images/mail.svg" />
+                  </div>
                   <span className="account-text">Email</span>
                 </div>
-                <div className="account w-6 h-6">
-                  <img src="./images/facebook.svg" />
+                <div className="account">
+                  <div>
+                    <img src="./images/facebook.svg" />
+                  </div>
                   <span className="account-text">Facebook</span>
                 </div>
-                <div className="account w-6 h-6">
-                  <img src="./images/twitter.svg" />
+                <div className="account">
+                  <div>
+                <img src="./images/twitter.svg" />
+                  </div>
                   <span className="account-text">Twitter</span>
                 </div>
-                <div className="account w-6 h-6">
-                  <img src="./images/instagram.svg" />
+                <div className="account">
+                  <div>
+                    <img src="./images/instagram.svg" />
+                  </div>
                   <span className="account-text">Instagram</span>
                 </div>
               </div>

@@ -27,10 +27,6 @@
         font-weight: 500;
         src: url('./fonts/Nunito-Medium.ttf') format('ttf');
     }
-
-    * {
-        box-sizing: border-box;
-    }
 }
 
 @layer components {
@@ -62,11 +58,11 @@
     }
 
     .menu-button {
-        @apply lg:hidden p-8 absolute left-0 top-0 hover:scale-110;
+        @apply lg:hidden m-2 fixed left-0 top-0 hover:scale-110;
     }
 
     .sidebar {
-        @apply lg:hidden sm:flex sm:flex-col bg-white shadow-lg h-screen left-0 top-0;
+        @apply lg:hidden flex flex-col bg-white fixed shadow-lg h-screen left-0 top-0 z-10 m-0;
     }
 
     .sidebar-heading {
@@ -133,7 +129,7 @@
     }
 
     .subjects-subtitle {
-        @apply text-base text-p22 font-medium px-8;
+        @apply text-base text-p22 font-medium lg:px-8 sm:px-16 lg:text-start sm:text-center;
     }
 
     .subject-wrapper {
@@ -166,19 +162,31 @@
     }
 
     .carousel-wrapper {
-        @apply flex flex-col overflow-hidden w-p1580;
+        @apply flex flex-col overflow-x-hidden lg:w-p1580 sm:w-[640px];
     }
 
     .carousel-extend {
-        @apply flex transition-transform ease-out duration-1000;
+        @apply lg:flex sm:hidden transition-transform ease-out duration-1000;
+    }
+
+    .carousel-extend-small {
+        @apply lg:hidden sm:flex w-fit transition-transform ease-out duration-1000 shadow-lg h-fit;
     }
 
     .slide {
-        @apply flex gap-16 px-16;
+        @apply lg:flex sm:hidden gap-16 px-16;
+    }
+
+    .small-slide {
+        @apply lg:hidden sm:flex;
     }
 
     .post-wrapper {
-        @apply flex flex-col bg-post w-p315 h-p315 justify-end p-6 transition-all hover:scale-110;
+        @apply lg:flex sm:hidden flex-col bg-post w-p315 h-p315 justify-end p-6 transition-all hover:scale-110;
+    }
+
+    .post-wrapper-small {
+        @apply lg:hidden w-[640px] h-p315 bg-post flex flex-col justify-end p-6;
     }
 
     .post-heading {
@@ -186,7 +194,7 @@
     }
 
     .posted {
-        @apply text-white text-base;
+        @apply text-base text-white;
     }
 
     .indicators-main {
@@ -202,11 +210,11 @@
     }
 
     .footer {
-        @apply flex flex-row h-p211 bg-primary p-10;
+        @apply flex lg:flex-row  sm:flex-col lg:h-p211 lg:items-baseline sm:items-center bg-primary p-10;
     }
 
     .footer-brand {
-        @apply w-1/2 flex flex-col justify-evenly;
+        @apply lg:w-1/2 flex flex-col justify-evenly lg:items-start sm:items-center mb-4;
     }
 
     .footer-logo {
@@ -222,30 +230,34 @@
     }
     
     .passionately {
-        @apply text-base text-primary;
+        @apply text-base text-primary lg:text-left sm:text-center;
     }
 
     .contacts-wrapper {
-        @apply flex justify-between w-1/3;
+        @apply flex lg:flex-row sm:flex-col justify-between w-1/3;
     }
 
     .other-pages {
-        @apply flex flex-col justify-evenly;
+        @apply flex flex-col sm:gap-4 lg:gap-1 justify-evenly lg:mb-4 sm:mb-8;
     }
 
     .other-page {
-        @apply text-white text-p18;
+        @apply text-white text-p18 lg:text-start sm:text-center;
     }
 
     .accounts-wrapper {
-        @apply flex flex-col gap-2;
+        @apply flex flex-col lg:gap-2 sm:gap-4 justify-start lg:items-start sm:items-center;
     }
 
     .account {
-        @apply flex justify-between;
+        @apply flex w-fit;
+    }
+
+    .account img {
+        @apply w-6 h-6;
     }
 
     .account-text {
-        @apply text-base text-white ml-2;
+        @apply text-base text-white ml-2 lg:text-start sm:text-center grow;
     }
 }
