@@ -1,5 +1,7 @@
 import { Slide } from './Slide'
 import { useState, useEffect } from 'react'
+import { SmallSlide } from './SmallSlide';
+import { Post } from './Post';
 
 type CarouselProps = {
     data: {
@@ -29,6 +31,15 @@ export const Carousel = ({ data }: CarouselProps) => {
           data.map((e) => {
             return(
               <Slide subData={e} />
+            )
+          })
+        }
+      </div>
+      <div className="carousel-extend-small" style={{transform: `translateX(-${curr * 640}px)`}}>
+        {
+          data[0].map((e) => {
+            return(
+              <Post post={e} />
             )
           })
         }

@@ -10,14 +10,16 @@ type SlideProps = {
 
 export const Slide = ({ subData }: SlideProps) => {
   return (
-    <div className="slide">
-      {
-        subData.map((e) => {
-          return (
-            <Post post={e} />
-          );
-        })
-      }
-    </div>
+    <>
+      <div className="slide">
+        {
+          subData.map((e) => {
+            return (
+              <Post post={e} />
+            );
+          })
+        }
+      </div>
+    </>
   );
 }
