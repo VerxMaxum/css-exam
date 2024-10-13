@@ -48,7 +48,7 @@ export const Landing = () => {
 
   return (
       <>
-        <section className="section h-screen">
+        <section className="section section-vh">
           <Navigation />
           <div className="home-content">
             <div className="home-sub-container">
@@ -83,7 +83,7 @@ export const Landing = () => {
           </div>
           <Banner />
         </section>
-        <section className="section h-screen" id="tracks" ref={tracks}>
+        <section className="section" id="tracks" ref={tracks}>
           <h3 className="section-title">Tracks</h3>
           <div className="track-main">
             <div className="tracks-wrapper">
@@ -100,7 +100,7 @@ export const Landing = () => {
             <h6 className="subjects-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut
             </h6>
-            <div className="mt-16">
+            <div className="flex lg:flex-row sm:flex-col mt-16">
               {
                 listOfSubjects.map((e, index) => {
                   let title = "";

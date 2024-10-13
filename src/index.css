@@ -27,29 +27,58 @@
         font-weight: 500;
         src: url('./fonts/Nunito-Medium.ttf') format('ttf');
     }
+
+    * {
+        box-sizing: border-box;
+    }
 }
 
 @layer components {
     .section,
     .subjects-main {
         @apply flex flex-col;
+        @apply sm:h-fit;
     }
 
     .nav-wrapper {
-        @apply flex;
+        @apply flex justify-center;
     }
 
     .nav-logo-wrapper {
-        @apply w-1/2 flex items-center ml-7;
+        @apply lg:w-1/2 flex items-center py-4 px-8 ml-7;
     }
 
     .navigations-wrapper {
-        @apply w-1/2 flex p-10 justify-evenly;
+        @apply grow p-6 justify-end lg:flex sm:hidden;
     }
 
     .navigation-item {
-        @apply text-primary font-nunito font-bold text-center text-lg p-4 cursor-pointer;
+        @apply text-primary font-nunito font-bold text-center text-lg py-4 px-8 cursor-pointer;
         @apply hover:bg-primary hover:text-white hover:transition-all;
+    }
+
+    .nav-wrapper.side {
+        @apply lg:hidden;
+    }
+
+    .menu-button {
+        @apply lg:hidden p-8 absolute left-0 top-0 hover:scale-110;
+    }
+
+    .sidebar {
+        @apply lg:hidden sm:flex sm:flex-col bg-white shadow-lg h-screen left-0 top-0;
+    }
+
+    .sidebar-heading {
+        @apply flex;
+    }
+
+    .sidebar-title {
+        @apply text-p22 text-primary font-bold text-center w-full py-4;
+    }
+
+    .sidebar-button {
+        @apply absolute top-0 right-0 pr-2 pt-2 hover:scale-110;
     }
 
     .home-content {
@@ -57,7 +86,7 @@
     }
 
     .home-title {
-        @apply text-p66 text-primary font-extrabold leading-[120%] w-[740px] text-center;
+        @apply lg:text-p66 sm:text-[2.5rem] text-primary font-extrabold leading-[120%] w-[740px] text-center;
     }
 
     .home-sub-container,
@@ -78,7 +107,7 @@
     }
 
     .tracks-wrapper {
-        @apply grid grid-cols-track w-[1216px] gap-10;
+        @apply grid grid-cols-track w-[1316px] gap-10 px-[50px];
     }
 
     .track {
@@ -86,7 +115,7 @@
     }
 
     .track-img {
-        @apply object-cover w-full h-64 rounded-[35px];
+        @apply object-cover w-full lg:h-64 md:h-72 rounded-[35px];
     }
 
     .track-name {
@@ -104,7 +133,7 @@
     }
 
     .subjects-subtitle {
-        @apply text-base text-p22 font-medium;
+        @apply text-base text-p22 font-medium px-8;
     }
 
     .subject-wrapper {
@@ -133,7 +162,7 @@
     }
 
     .subjects-wrapper {
-        @apply grid grid-cols-subject gap-11 mt-12 px-[5%];
+        @apply grid grid-cols-subject gap-11 mt-12 px-[5%] sm:h-fit;
     }
 
     .carousel-wrapper {
@@ -173,7 +202,7 @@
     }
 
     .footer {
-        @apply flex h-p211 bg-primary p-10;
+        @apply flex flex-row h-p211 bg-primary p-10;
     }
 
     .footer-brand {
