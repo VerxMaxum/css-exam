@@ -9,7 +9,7 @@ export const Navigation = () => {
                 }}>
                     <img src="./images/menu.svg" />
                 </button>
-                <ul className={`sidebar ${isShown ? "sm:absolute" : "sm:hidden"}`}>
+                <ul className={`sidebar ${isShown ? "sm:fixed" : "sm:hidden"}`}>
                     <div className="sidebar-heading">
                         <h6 className="sidebar-title">Menu</h6>
                         <button className="sidebar-button" onClick={() => {
