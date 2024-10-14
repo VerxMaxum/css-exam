@@ -82,7 +82,7 @@
     }
 
     .home-title {
-        @apply lg:text-p66 sm:text-[2.5rem] text-primary font-extrabold leading-[120%] w-[740px] text-center;
+        @apply lg:text-p66 max-lg:text-[2rem] text-primary font-extrabold leading-[120%] lg:w-[720px] mx-[20px] text-center;
     }
 
     .home-sub-container,
@@ -91,7 +91,7 @@
     }
 
     .home-subtitle {
-        @apply text-base text-p22 font-medium;
+        @apply text-base text-p22 font-medium max-lg:text-center max-lg:mx-2;
     }
 
     .home-buttons {
