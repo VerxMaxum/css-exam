@@ -45,7 +45,7 @@
     }
 
     .navigations-wrapper {
-        @apply grow p-6 justify-end lg:flex sm:hidden;
+        @apply grow p-6 justify-end flex max-lg:hidden;
     }
 
     .navigation-item {
@@ -62,7 +62,7 @@
     }
 
     .sidebar {
-        @apply lg:hidden flex flex-col bg-white fixed shadow-lg h-screen left-0 top-0 z-10 m-0;
+        @apply lg:hidden flex flex-col bg-white fixed shadow-lg h-full left-0 top-0 z-10 m-0;
     }
 
     .sidebar-heading {
