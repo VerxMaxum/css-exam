@@ -1,6 +1,5 @@
-import { createContext } from 'react'
 import { Landing } from './pages/Landing'
-import { Link, Route, Routes } from 'react-router-dom'
+import {  Route, Routes } from 'react-router-dom'
 import { Navigation } from './components/Navigation'
 import { About } from './pages/About'
 import { Community } from './pages/Community'
