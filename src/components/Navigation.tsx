@@ -1,6 +1,20 @@
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import { Landing } from './pages/Landing'
+
+type NavLinkStyleProp = {
+    isActive: boolean
+}
+
 export const Navigation = () => {
     const [isShown, setIsShown] = useState(false);
+
+    const navLinkStyles = ({ isActive }: NavLinkStyleProp) => {
+        return {
+            textDecoration: isActive ? "underline" : "none"
+        }
+    }
+
     return (
         <>
             <nav className="nav-wrapper">
@@ -19,16 +33,16 @@ export const Navigation = () => {
                         </button>
                     </div>
                     <li className="navigation-item side">
-                        Home
+                        <NavLink to="/" style={navLinkStyles}>Home</NavLink>
                     </li>
                     <li className="navigation-item side">
-                        About
+                        <NavLink to="/About" style={navLinkStyles}>About</NavLink>
                     </li>
                     <li className="navigation-item side">
-                        Community
+                        <NavLink to="/Community" style={navLinkStyles}>Community</NavLink>
                     </li>
                     <li className="navigation-item side">
-                        News & Events
+                        <NavLink to="/news-and-events" style={navLinkStyles}>News & Events</NavLink>
                     </li>
                 </ul>
                 <div className="nav-logo-wrapper">
@@ -36,16 +50,16 @@ export const Navigation = () => {
                 </div>
                 <ul className="navigations-wrapper">
                     <li className="navigation-item">
-                        Home
+                        <NavLink to="/" style={navLinkStyles}>Home</NavLink>
                     </li>
                     <li className='navigation-item'>
-                        About
+                        <NavLink to="/About" style={navLinkStyles}>About</NavLink>
                     </li>
                     <li className='navigation-item'>
-                        Community
+                        <NavLink to="/Community" style={navLinkStyles}>Community</NavLink>
                     </li>
                     <li className='navigation-item'>
-                        News & Events
+                        <NavLink to="/news-and-events" style={navLinkStyles}>News & Events</NavLink>
                     </li>
                 </ul>
             </nav>

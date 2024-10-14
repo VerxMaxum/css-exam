@@ -49,7 +49,7 @@
     }
 
     .navigation-item {
-        @apply text-primary font-nunito font-bold text-center text-lg py-4 px-8 cursor-pointer;
+        @apply text-primary font-nunito font-bold text-center text-lg py-2 px-8 cursor-pointer;
         @apply hover:bg-primary hover:text-white hover:transition-all;
     }
 

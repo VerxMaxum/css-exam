@@ -1,13 +1,13 @@
 import React from 'react';
 import { useState, useRef } from 'react'
-import { Banner } from './Banner'
-import { Navigation } from './Navigation'
-import { Track } from './Track'
-import { Subject } from './Subject'
-import { Carousel } from './Carousel'
-import { slides } from '../data/latest.json'
-import dummyTexts from '../dummy/dummy'
-import subjectDisplay from '../subjects/subjectDisplay';
+import { Banner } from '../Banner'
+import { Navigation } from '../Navigation'
+import { Track } from '../Track'
+import { Subject } from '../Subject'
+import { Carousel } from '../Carousel'
+import { slides } from '../../data/latest.json'
+import dummyTexts from '../../dummy/dummy'
+import subjectDisplay from '../../subjects/subjectDisplay';
 
 type ListOfSubjectProps = {
   isSelected: boolean,
@@ -49,7 +49,6 @@ export const Landing = () => {
   return (
       <>
         <section className="section section-vh">
-          <Navigation />
           <div className="home-content">
             <div className="home-sub-container">
               <h2 className="home-title">
