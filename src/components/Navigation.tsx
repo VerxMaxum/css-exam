@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { Landing } from './pages/Landing'
 
 type NavLinkStyleProp = {
     isActive: boolean

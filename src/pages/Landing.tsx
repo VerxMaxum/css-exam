@@ -1,13 +1,12 @@
 import React from 'react';
 import { useState, useRef } from 'react'
-import { Banner } from '../Banner'
-import { Navigation } from '../Navigation'
-import { Track } from '../Track'
-import { Subject } from '../Subject'
-import { Carousel } from '../Carousel'
-import { slides } from '../../data/latest.json'
-import dummyTexts from '../../dummy/dummy'
-import subjectDisplay from '../../subjects/subjectDisplay';
+import { Banner } from '../components/Banner'
+import { Track } from '../components/Track'
+import { Subject } from '../components/Subject'
+import { Carousel } from '../components/Carousel'
+import { slides } from '../data/latest.json'
+import dummyTexts from '../dummy/dummy'
+import subjectDisplay from '../subjects/subjectDisplay'
 
 type ListOfSubjectProps = {
   isSelected: boolean,

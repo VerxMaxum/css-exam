@@ -1,10 +1,10 @@
 import { createContext } from 'react'
-import { Landing } from './components/pages/Landing'
+import { Landing } from './pages/Landing'
 import { Link, Route, Routes } from 'react-router-dom'
 import { Navigation } from './components/Navigation'
-import { About } from './components/pages/About'
-import { Community } from './components/pages/Community'
-import { NewsEvents } from './components/pages/NewsEvents'
+import { About } from './pages/About'
+import { Community } from './pages/Community'
+import { NewsEvents } from './pages/NewsEvents'
 
 function App() {
 
