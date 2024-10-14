@@ -166,7 +166,7 @@
     }
 
     .carousel-extend {
-        @apply lg:flex sm:hidden transition-transform ease-out duration-1000;
+        @apply flex max-lg:hidden transition-transform ease-out duration-1000;
     }
 
     .carousel-extend-small {
@@ -210,11 +210,11 @@
     }
 
     .footer {
-        @apply flex lg:flex-row  sm:flex-col lg:h-p211 lg:items-baseline sm:items-center bg-primary p-10;
+        @apply flex lg:flex-row  max-lg:flex-col lg:h-p211 lg:items-baseline max-lg:items-center bg-primary p-10;
     }
 
     .footer-brand {
-        @apply lg:w-1/2 flex flex-col justify-evenly lg:items-start sm:items-center mb-4;
+        @apply lg:w-1/2 flex flex-col justify-evenly lg:items-start max-lg:items-center mb-4;
     }
 
     .footer-logo {
@@ -230,23 +230,23 @@
     }
     
     .passionately {
-        @apply text-base text-primary lg:text-left sm:text-center;
+        @apply text-base text-primary lg:text-left max-lg:text-center;
     }
 
     .contacts-wrapper {
-        @apply flex lg:flex-row sm:flex-col justify-between w-1/3;
+        @apply flex lg:flex-row max-lg:flex-col justify-between w-1/3;
     }
 
     .other-pages {
-        @apply flex flex-col sm:gap-4 lg:gap-1 justify-evenly lg:mb-4 sm:mb-8;
+        @apply flex flex-col max-lg:gap-4 lg:gap-1 justify-evenly lg:mb-4 max-lg:mb-8;
     }
 
     .other-page {
-        @apply text-white text-p18 lg:text-start sm:text-center;
+        @apply text-white text-p18 lg:text-start max-lg:text-center;
     }
 
     .accounts-wrapper {
-        @apply flex flex-col lg:gap-2 sm:gap-4 justify-start lg:items-start sm:items-center;
+        @apply flex flex-col lg:gap-2 max-lg:gap-4 justify-start lg:items-start max-lg:items-center;
     }
 
     .account {
