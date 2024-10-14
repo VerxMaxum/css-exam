@@ -129,7 +129,11 @@
     }
 
     .subjects-subtitle {
-        @apply text-base text-p22 font-medium lg:px-8 sm:px-16 lg:text-start sm:text-center;
+        @apply text-base text-p22 font-medium lg:px-8 sm:px-16 lg:text-start max-lg:text-center;
+    }
+
+    .subject-button-wrapper {
+        @apply flex lg:flex-row max-lg:flex-col mt-16;
     }
 
     .subject-wrapper {

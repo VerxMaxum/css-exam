@@ -99,7 +99,7 @@ export const Landing = () => {
             <h6 className="subjects-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut
             </h6>
-            <div className="flex lg:flex-row sm:flex-col mt-16">
+            <div className="subject-button-wrapper">
               {
                 listOfSubjects.map((e, index) => {
                   let title = "";
