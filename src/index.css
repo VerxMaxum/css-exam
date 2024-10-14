@@ -58,7 +58,7 @@
     }
 
     .menu-button {
-        @apply lg:hidden m-2 fixed left-0 top-0 hover:scale-110;
+        @apply lg:hidden m-2 fixed left-0 top-0 hover:scale-110 z-10;
     }
 
     .sidebar {
@@ -95,7 +95,8 @@
     }
 
     .home-buttons {
-        @apply text-white bg-purplecss p-3 font-bold rounded-p10 text-base translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all;
+        @apply text-white bg-purplecss p-3 font-bold rounded-p10 text-base translate-y-0;
+        @apply hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all;
     }
 
     .section-title {
@@ -129,7 +130,7 @@
     }
 
     .subjects-subtitle {
-        @apply text-base text-p22 font-medium lg:px-8 sm:px-16 lg:text-start max-lg:text-center;
+        @apply text-base text-p22 font-medium lg:px-8 max-lg:px-16 lg:text-start max-lg:text-center;
     }
 
     .subject-button-wrapper {
@@ -162,11 +163,11 @@
     }
 
     .subjects-wrapper {
-        @apply grid grid-cols-subject gap-11 mt-12 px-[5%] sm:h-fit;
+        @apply grid grid-cols-subject gap-11 mt-12 px-[5%] max-lg:h-fit;
     }
 
     .carousel-wrapper {
-        @apply flex flex-col overflow-x-hidden lg:w-p1580 sm:w-[640px];
+        @apply flex flex-col overflow-x-hidden lg:w-p1580 max-lg:w-[300px];
     }
 
     .carousel-extend {
@@ -174,23 +175,23 @@
     }
 
     .carousel-extend-small {
-        @apply lg:hidden sm:flex w-fit transition-transform ease-out duration-1000 shadow-lg h-fit;
+        @apply lg:hidden max-lg:flex w-fit transition-transform ease-out duration-1000 shadow-lg h-fit;
     }
 
     .slide {
-        @apply lg:flex sm:hidden gap-16 px-16;
+        @apply lg:flex max-lg:hidden gap-16 px-16;
     }
 
     .small-slide {
-        @apply lg:hidden sm:flex;
+        @apply lg:hidden max-lg:flex;
     }
 
     .post-wrapper {
-        @apply lg:flex sm:hidden flex-col bg-post w-p315 h-p315 justify-end p-6 transition-all hover:scale-110;
+        @apply lg:flex max-lg:hidden flex-col bg-post w-p315 h-p315 justify-end p-6 transition-all hover:scale-110;
     }
 
     .post-wrapper-small {
-        @apply lg:hidden w-[640px] h-p315 bg-post flex flex-col justify-end p-6;
+        @apply lg:hidden w-[290px] h-p315 bg-post flex flex-col justify-end p-6 transition-all hover:scale-110 mx-[5px];
     }
 
     .post-heading {

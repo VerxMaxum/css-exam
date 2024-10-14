@@ -34,7 +34,7 @@ export const Carousel = ({ data }: CarouselProps) => {
           })
         }
       </div>
-      <div className="carousel-extend-small" style={{transform: `translateX(-${curr * 640}px)`}}>
+      <div className="carousel-extend-small" style={{transform: `translateX(-${curr * 300}px)`}}>
         {
           data[0].map((e) => {
             return(
