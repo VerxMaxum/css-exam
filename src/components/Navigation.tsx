@@ -17,18 +17,13 @@ export const Navigation = () => {
     return (
         <>
             <nav className="nav-wrapper">
-                <button className="menu-button" onClick={() => {
-                    setIsShown(!isShown);
-                }}>
-                    <img src="./images/menu.svg" />
-                </button>
-                <div className={`sidebar ${isShown ? "max-lg:fixed" : "max-lg:hidden"}`}>
+                <div className={`sidebar ${isShown ? "max-lg:-translate-x-full" : "max-lg:translate-x-0"}`}>
                     <div className="sidebar-heading">
                         <h6 className="sidebar-title">Menu</h6>
-                        <button className="sidebar-button" onClick={() => {
+                        <button className="menu-button-wrapper" onClick={() => {
                         setIsShown(!isShown);
                         }}>
-                            <img src="./images/close.svg" />
+                            <img className="menu-button" src={isShown ? "./images/menu.svg" : "./images/chev_left.svg"} />
                         </button>
                     </div>
                     <div className="flex flex-col gap-4 w-full">
