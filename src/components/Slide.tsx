@@ -13,9 +13,9 @@ export const Slide = ({ subData }: SlideProps) => {
     <>
       <div className="slide">
         {
-          subData.map((e) => {
+          subData.map((e, index) => {
             return (
-              <Post post={e} />
+              <Post key={index} post={e} />
             );
           })
         }

@@ -25,18 +25,18 @@ export const Carousel = ({ data }: CarouselProps) => {
     <>
       <div className="carousel-extend" style={{transform: `translateX(-${curr * 1580}px)`}}>
         {
-          data.map((e) => {
+          data.map((e, index) => {
             return(
-              <Slide subData={e} />
+              <Slide key={index} subData={e} />
             )
           })
         }
       </div>
       <div className="carousel-extend-small" style={{transform: `translateX(-${curr * 300}px)`}}>
         {
-          data[0].map((e) => {
+          data[0].map((e, index) => {
             return(
-              <Post post={e} />
+              <Post key={index} post={e} />
             )
           })
         }
