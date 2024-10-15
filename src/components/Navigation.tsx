@@ -22,7 +22,7 @@ export const Navigation = () => {
                 }}>
                     <img src="./images/menu.svg" />
                 </button>
-                <ul className={`sidebar ${isShown ? "max-lg:fixed" : "max-lg:hidden"}`}>
+                <div className={`sidebar ${isShown ? "max-lg:fixed" : "max-lg:hidden"}`}>
                     <div className="sidebar-heading">
                         <h6 className="sidebar-title">Menu</h6>
                         <button className="sidebar-button" onClick={() => {
@@ -31,36 +31,38 @@ export const Navigation = () => {
                             <img src="./images/close.svg" />
                         </button>
                     </div>
-                    <li className="navigation-item side">
-                        <NavLink to="/" style={navLinkStyles}>Home</NavLink>
-                    </li>
-                    <li className="navigation-item side">
-                        <NavLink to="/About" style={navLinkStyles}>About</NavLink>
-                    </li>
-                    <li className="navigation-item side">
-                        <NavLink to="/Community" style={navLinkStyles}>Community</NavLink>
-                    </li>
-                    <li className="navigation-item side">
-                        <NavLink to="/news-and-events" style={navLinkStyles}>News & Events</NavLink>
-                    </li>
-                </ul>
+                    <div className="flex flex-col gap-4 w-full">
+                        <div className="navigation-item side">
+                            <NavLink to="/" style={navLinkStyles}>Home</NavLink>
+                        </div>
+                        <div className="navigation-item side">
+                            <NavLink to="/About" style={navLinkStyles}>About</NavLink>
+                        </div>
+                        <div className="navigation-item side">
+                            <NavLink to="/Community" style={navLinkStyles}>Community</NavLink>
+                        </div>
+                        <div className="navigation-item side">
+                            <NavLink to="/news-and-events" style={navLinkStyles}>News & Events</NavLink>
+                        </div>
+                    </div>
+                </div>
                 <div className="nav-logo-wrapper">
                     <img src="./images/logo.png" />
                 </div>
-                <ul className="navigations-wrapper">
-                    <li className="navigation-item">
+                <div className="navigations-wrapper">
+                    <div className="navigation-item">
                         <NavLink to="/" style={navLinkStyles}>Home</NavLink>
-                    </li>
-                    <li className='navigation-item'>
+                    </div>
+                    <div className='navigation-item'>
                         <NavLink to="/About" style={navLinkStyles}>About</NavLink>
-                    </li>
-                    <li className='navigation-item'>
+                    </div>
+                    <div className='navigation-item'>
                         <NavLink to="/Community" style={navLinkStyles}>Community</NavLink>
-                    </li>
-                    <li className='navigation-item'>
+                    </div>
+                    <div className='navigation-item'>
                         <NavLink to="/news-and-events" style={navLinkStyles}>News & Events</NavLink>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </nav>
         </>
     );

@@ -126,7 +126,7 @@ export const Landing = () => {
           </div>
           <div className="subjects-wrapper">
             {
-              listOfSubjects.filter(e => e.isSelected).map(e => e.list)[0].map((e, index) => {
+              listOfSubjects.filter(e => e.isSelected)[0].list.map((e, index) => {
                 return (
                   <Subject key={index} src={e.src} code={e.code} title={e.title}/>
                 );

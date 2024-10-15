@@ -49,16 +49,16 @@
     }
 
     .navigation-item {
-        @apply text-primary font-nunito font-bold text-center text-lg cursor-pointer;
-        @apply  hover:text-white hover:transition-all;
+        @apply mr-2;
     }
 
-    .navigation-item a {
-        @apply hover:bg-primary px-8 py-4;
+    .navigation-item > a {
+        @apply block text-primary font-nunito font-bold text-center text-lg cursor-pointer;
+        @apply  hover:text-white hover:bg-primary hover:transition-all px-6 py-4;
     }
 
     .nav-wrapper.side {
-        @apply lg:hidden;
+        @apply lg:hidden h-max w-max;
     }
 
     .menu-button {
