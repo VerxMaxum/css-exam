@@ -16,8 +16,6 @@ export const Carousel = ({ data }: CarouselProps) => {
     setCurr((curr) => curr === data.length-1 ? 0 : curr + 1);
   }
 
-  console.log(curr);
-
   useEffect(() => {
     const slideInterval = setInterval(next, 10000)
     return () => clearInterval(slideInterval)
